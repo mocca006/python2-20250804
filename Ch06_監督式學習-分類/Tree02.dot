@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="proline <= 730.0\nentropy = 1.556\nsamples = 124\nvalue = [47, 47, 30]\nclass = 0", fillcolor="#ffffff"] ;
+1 [label="flavanoids <= 1.385\nentropy = 1.04\nsamples = 72\nvalue = [1, 45, 26]\nclass = 1", fillcolor="#adf4cb"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="color_intensity <= 3.625\nentropy = 0.696\nsamples = 32\nvalue = [0, 6, 26]\nclass = 2", fillcolor="#9e67eb"] ;
+1 -> 2 ;
+3 [label="entropy = 0.0\nsamples = 6\nvalue = [0, 6, 0]\nclass = 1", fillcolor="#39e581"] ;
+2 -> 3 ;
+4 [label="entropy = 0.0\nsamples = 26\nvalue = [0, 0, 26]\nclass = 2", fillcolor="#8139e5"] ;
+2 -> 4 ;
+5 [label="alcohol <= 13.175\nentropy = 0.169\nsamples = 40\nvalue = [1, 39, 0]\nclass = 1", fillcolor="#3ee684"] ;
+1 -> 5 ;
+6 [label="entropy = 0.0\nsamples = 38\nvalue = [0, 38, 0]\nclass = 1", fillcolor="#39e581"] ;
+5 -> 6 ;
+7 [label="hue <= 1.09\nentropy = 1.0\nsamples = 2\nvalue = [1, 1, 0]\nclass = 0", fillcolor="#ffffff"] ;
+5 -> 7 ;
+8 [label="entropy = 0.0\nsamples = 1\nvalue = [1, 0, 0]\nclass = 0", fillcolor="#e58139"] ;
+7 -> 8 ;
+9 [label="entropy = 0.0\nsamples = 1\nvalue = [0, 1, 0]\nclass = 1", fillcolor="#39e581"] ;
+7 -> 9 ;
+10 [label="flavanoids <= 2.165\nentropy = 0.622\nsamples = 52\nvalue = [46, 2, 4]\nclass = 0", fillcolor="#e89152"] ;
+0 -> 10 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+11 [label="color_intensity <= 3.605\nentropy = 0.918\nsamples = 6\nvalue = [0, 2, 4]\nclass = 2", fillcolor="#c09cf2"] ;
+10 -> 11 ;
+12 [label="entropy = 0.0\nsamples = 2\nvalue = [0, 2, 0]\nclass = 1", fillcolor="#39e581"] ;
+11 -> 12 ;
+13 [label="entropy = 0.0\nsamples = 4\nvalue = [0, 0, 4]\nclass = 2", fillcolor="#8139e5"] ;
+11 -> 13 ;
+14 [label="entropy = 0.0\nsamples = 46\nvalue = [46, 0, 0]\nclass = 0", fillcolor="#e58139"] ;
+10 -> 14 ;
+}
