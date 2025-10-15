@@ -62,7 +62,30 @@ st.info(f'結果={d:.2f}')
 # 全形字體庫
 
 # 滑桿
-st.wirte('滑桿')
-ss = st.slider("選擇數量", 1, 20)
+st.write('滑桿')
+ss = st.slider("選擇數量", 1, 20, step=1, value=9)
 st.info(ss)
 
+ss1 = st.slider("選擇數量", 1.0, 20.0, step=0.1, value=9.0, key='5555')
+st.info(ss1)
+
+# 按鈕
+st.write('按鈕')
+if st.button("下單"):
+    st.info("送出訂單")
+else:
+    st.info("尚未")
+
+# 側邊攔
+st.write('側邊欄')
+sb = st.sidebar.radio("select Time",['AM','PM',"none"],key = '6666')
+st.sidebar.info(sb)
+
+#首頁
+#側邊欄---資料集挑選
+#main---資料是否縮放/降維
+#側邊欄2---挑選模型與參數
+#main---模型
+
+#ipynb 匯出模型 ---> py 導入模型
+#streamit 連結Github ---> 上傳雲端
